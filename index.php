@@ -20,7 +20,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>FruityWifi</title>
+<title>BlackBulb</title>
 <script src="../js/jquery.js"></script>
 <script src="../js/jquery-ui.js"></script>
 <link rel="stylesheet" href="../css/jquery-ui.css" />
@@ -66,7 +66,7 @@ $service = $_POST["service"];
 if ($logfile != "" and $action == "delete") {
     $exec = "$bin_rm ".$mod_logs_history.$logfile.".log";
     //exec("$bin_danger \"$exec\"", $dump); //DEPRECATED
-    exec_fruitywifi($exec);
+    exec_blackbulb($exec);
 }
 
 ?>
@@ -76,7 +76,7 @@ if ($logfile != "" and $action == "delete") {
 
     &nbsp;&nbsp;version <?=$mod_version?><br>
     <? 
-    if (file_exists("/usr/share/FruityWifi/conf/rpitwit_config")) { 
+    if (file_exists("/usr/share/BlackBulb/conf/rpitwit_config")) { 
         echo "&nbsp;&nbsp;$mod_alias <font style='color:lime'>installed</font><br>";
     } else {
         //echo "$mod_alias <a href='includes/module_action.php?install=install_$mod_name' style='color:red'>install</a><br>";

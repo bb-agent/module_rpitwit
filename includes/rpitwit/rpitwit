@@ -42,7 +42,7 @@ def main(args=sys.argv[1:]):
 	COMMAND_DIR = os.path.expanduser('~/rpitwit_commands')
 	SETUP = "FALSE"
 
-	#CONFIG_FILE = os.path.expanduser('/usr/share/FruityWifi/conf/rpitwit_config')
+	#CONFIG_FILE = os.path.expanduser('/usr/share/BlackBulb/conf/rpitwit_config')
 	#COMMAND_DIR = os.path.expanduser('../rpitwit_commands')
 
 	# -------------------------------------------
